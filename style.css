@@ -1,0 +1,930 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.fullpage{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+.box1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo{
+    width: 40vw;
+    height: 100vh;
+}
+.photo img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: right;
+}
+.text{
+   background: linear-gradient(to right,#5F5F5F,#373636);
+   width: 60vw;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.header{
+   width: 100%;
+   height: 10%;
+   position: relative;
+   bottom: 25%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.header h4{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.name{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name h1{
+    color: white;
+    font-size: 35px;
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+}
+.name hr{
+    width: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.ur{
+    width: 100%;
+    height: 5%;
+}
+.ur h4{
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    position: relative;
+    bottom: 10px;
+}
+.homesec{
+    width: 75%;
+    height: 15%;
+    border-radius: 25px;
+    background:linear-gradient(to right,white,grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homesec p{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 25px;
+    font-size: 15px;
+    letter-spacing: 2.5px;
+}
+.footer1{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer1 a{
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+/* CSS FOR SECOND - 2nd HTML FILE OR PAGE */
+
+.fullpage2{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header2{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header2 h1{
+   background: linear-gradient(to right,grey,white);
+   background-clip: text;
+   color: transparent;
+   letter-spacing: 5px;
+   font-size: 50px;
+   margin-top: 50px;
+}
+.header2 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box2{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.photo2{
+    width: 30vw;
+    height: 50vh;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.photo2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(5);
+}
+.tof{
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.tof h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+.tof hr{
+    width: 250px;
+}
+.footer2{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.footer2 a{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+
+
+/* CSS FOR THIRD - 3rd HTML FILE OR PAGE */
+.fullpage3{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header3 h1{
+    background: linear-gradient(to right,grey,white);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+.header3 hr{
+   width: 250px;
+   margin-top: 50px;
+   margin-right: 2.5px;
+}
+.box3{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.photo3{
+    width: 35%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.photo3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(5);
+}
+.aboutsec{
+    width: 45%;
+    height: 70%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background: linear-gradient(to right,white,grey);
+}
+.aboutsec p{
+    color: rgb(0, 0, 0);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 25px;
+}
+.footer3{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer3 a{
+  color: white;
+  font-size: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
+/* CSS FOR FOURTH - 4th HTML FILE OR PAGE */
+.fullpage4{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header4{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header4 h1{
+    background: linear-gradient(to right,grey,white);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+.header4 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box4{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.photo4{
+    width: 35%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.photo4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(5);
+}
+.edustgsec{
+    width: 45%;
+    height: 70%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right,white,grey);
+}
+.edustgsec ol{
+    margin-left: 50px;
+}
+.edustgsec li{
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 18px;
+}
+.footer4{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer4 a{
+    color: white;
+    font-size: 15px;
+     margin-right: 50px;
+     margin-left: 50px;
+}
+
+
+/* CSS FOR Fifth - 5th HTML FILE OR PAGE */
+.fullpage5{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header5{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header5 h1{
+    background: linear-gradient(to right,grey,white);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px;
+}
+.header5 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box5{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.photo5{
+    width: 35%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.photo5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(5);
+}
+.expsec{
+    width: 45%;
+    height: 70%;
+    border-radius: 25px;
+    background: linear-gradient(to right,white,grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.expsec ol{
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.expsec li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.footer5{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer5 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+/* CSS FOR Sixth - 6th HTML FILE OR PAGE */
+.fullpage6{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header6{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header6 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px; 
+}
+.header6 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box6{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.photo6{
+    width: 35%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.photo6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(5);
+}
+.skillsec{
+    width: 45%;
+    height: 70%;
+    border-radius: 25px;
+    background: linear-gradient(to right,white,grey);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.skillsec ol{
+    margin-left:50px;
+}
+.skillsec li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.footer6{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer6 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+/* CSS FOR Seventh - 7th HTML FILE OR PAGE */
+.fullpage7{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header7{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header7 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px; 
+}
+.header7 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box7{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.photo7{
+    width: 30%;
+    height: 70%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.photo7 img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(5);
+    object-fit: cover;
+    object-position:center;
+}
+.footer7{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.footer7 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+/* CSS FOR Eighth - 8th HTML FILE OR PAGE */
+.fullpage8{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header8{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header8 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 45px; 
+}
+.header8 hr{
+    width: 250px;
+    margin-top: 45px;
+    margin-right: 2.5px;
+}
+.box8{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project1box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project1box hr{
+    width: 200px;
+}
+.photo8{
+    height: 100%;
+    width: 35%;
+    background: linear-gradient(to right,white,grey);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    
+}
+.photo8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.photo8 p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+}
+.project2box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project2box hr{
+    width: 200px;
+}
+.project3box{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project3box hr{
+    width: 200px;
+}
+.footer8{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer8 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+/* CSS FOR Nineth - 9th HTML FILE OR PAGE */
+.fullpage9{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header9{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header9 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 45px; 
+}
+.header9 hr{
+    width: 250px;
+    margin-top: 45px;
+    margin-right: 2.5px;
+}
+.box9{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box9 hr{
+    width: 100px;
+}
+.photo9{
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.photo9 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo9sec{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    border-radius: 25px;
+    flex-direction: column;
+    background: linear-gradient(to right,white,grey);
+}
+.photo9sec hr{
+    width: 350px;
+    margin-left: 65px;
+    position: relative;
+    top: 15px;
+    border-color: red;
+}
+.photo9sec #hr100{
+    width: 500px;
+}
+.photo9sec li{
+  font-size: 20px;
+  margin-left: 65px;
+}
+.footer9{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer9 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+/* CSS FOR Tenth - 10th HTML FILE OR PAGE */
+.fullpage10{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header10{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header10 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px; 
+}
+.header10 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box10{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box10 hr{
+  width: 250px;
+}
+.photo10{
+    width: 30%;
+    height: 80%;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-left: 20%;
+}
+.photo10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.photo10sec{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo10sec a{
+    padding: 15px;
+    color: black;
+    background: linear-gradient(to right,white,grey);
+    margin-right: 70%;
+}
+.footer10{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.footer10 a{
+    color: white;
+    font-size: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+
+/* CSS FOR Eleventh - 11th HTML FILE OR PAGE */
+.fullpage11{
+  width:100vw;
+  height:100vh;
+  background: linear-gradient(to right,#5F5F5F,#373636);
+  overflow: hidden;
+}
+.header11{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header11 h1{
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 50px; 
+}
+.header11 hr{
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 2.5px;
+}
+.box11{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.font{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.font h1{
+    font-size: 100px;
+    background: linear-gradient(to right,white,grey);
+    background-clip: text;
+    color: transparent;
+}
+.photo11{
+  width: 40%;
+  height: 70%;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.photo11 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.consec{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    bottom: 10%;
+}
+.consec h3,a{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 300;
+}
+.footer11{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer11 a{
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
