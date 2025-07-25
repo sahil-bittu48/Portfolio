@@ -1,0 +1,841 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  overflow: hidden;
+}
+.menuiconbox {
+  width: 20%;
+  height: 9%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: fixed;
+  z-index: 2;
+}
+.icon {
+  width: 120px;
+  height: 38px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #02aabd;
+  cursor: pointer;
+  font-weight: 300;
+}
+.presenticon {
+  width: 75px;
+  height: 38px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #02aabd;
+}
+.menucontentbox {
+  width: 75%;
+  height: 9%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  left: 25%;
+  border-bottom-left-radius: 25px;
+  gap: 10px;
+  z-index: 2;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.menucontentboxopacity {
+  opacity: 1;
+}
+.menucontentbox .icon:hover {
+  background-color: rgb(2, 170, 189, 0.5);
+  color: white;
+}
+.active {
+  background-color: rgb(2, 170, 189, 0.5);
+  color: white;
+}
+
+/* CSS 4 HOME PAGE */
+#homepage  {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s linear;
+  opacity: 1;
+}
+.pfbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.pfbox h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 230px;
+  letter-spacing: 5px;
+  color: white;
+}
+.pfbox .spn {
+  font-family: "Oswald", sans-serif;
+  font-size: 230px;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.pfbox h3 {
+  font-weight: 400;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  bottom: 50px;
+  letter-spacing: 5px;
+}
+.whomibox {
+  width: 20%;
+  height: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.5);
+  gap: 10px;
+  position: absolute;
+  top: 91%;
+  left: 80%;
+  border-top-left-radius: 25px;
+  z-index: 1;
+}
+.whomibox .icon {
+  width: 75px;
+  height: 38px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.whomibox .text {
+  width: 120px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #02aabd;
+}
+.mcontentbox {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #02aabd, #00cdac);
+  border-top-right-radius: 80px;
+  border-top-left-radius: 80px;
+  transform: translateY(100%);
+  transition: all 1s linear;
+  z-index: 5;
+}
+.mcontentboxslider {
+  transform: translateY(0%);
+}
+.photo {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textsec {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.textsec h1 {
+  color: white;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.textsec h3 {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.textsec p {
+  color: #444342;
+  width: 90%;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid white;
+  padding: 10px 10px;
+  border-radius: 25px;
+  background-color: white;
+}
+.cv {
+  width: 20%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top-left-radius: 25px;
+}
+.cv .icon {
+  width: 75px;
+  height: 38px;
+}
+.cv .text {
+  width: 120px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 15px;
+  color: #02aabd;
+}
+
+/* CSS 4 ABOUT PAGE */
+#aboutpage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 75px;
+   opacity: 0;
+   transition: all 1s linear;
+}
+.aboutheading {
+  width: 90%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  align-self: flex-end;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.aboutheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.abouttext {
+  width: 80%;
+  height: 60%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abouttext .photo {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+}
+.abouttext .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.abouttext .text {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abouttext .text p {
+  width: 80%;
+  color: #444342;
+  background-color: white;
+  font-weight: 300;
+  padding: 25px 25px;
+  border-top-right-radius: 25px;
+}
+
+/* CSS 4 SKILLS PAGE */
+#skillspage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+   transition: all 1s linear;
+}
+.skillsheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 150px;
+}
+.skillsheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.box {
+  width: 100%;
+  height: 55%;
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.boxi {
+  width: 72%;
+  height: 20%;
+  background-color: white;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  overflow: hidden;
+}
+#one {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 0px;
+}
+#four {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 0px;
+}
+.boxi h3 {
+  font-weight: 400;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  color: white;
+  height: fit-content;
+  padding: 0px 50px;
+  width: 500px;
+  letter-spacing: 3px;
+}
+.icbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+.icbox i {
+  border: 1px solid #02aabd;
+  padding: 8px 8px;
+  border-radius: 12px;
+  border-style: dotted;
+}
+
+/* CSS 4 JOURNEY PAGE */
+#journeypage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+   transition: all 1s linear;
+}
+.journeyheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 150px;
+  align-self: flex-end;
+}
+.journeyheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.journeycntbox {
+  width: 100%;
+  height: 58%;
+  display: flex;
+  justify-content: space-between;
+}
+.journeyphoto {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-top-right-radius: 50px;
+  overflow: hidden;
+}
+.journeyphoto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.journeytext {
+  width: 55%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-top-left-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.journeytext .text {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-top-left-radius: 50px;
+  align-self: flex-end;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.journeytext .text h3 {
+  background-color: #02aabd;
+  color: white;
+  padding-left: 75px;
+  font-weight: 400;
+}
+.journeytext .text h4 {
+  font-size: 17px;
+  font-weight: 300;
+  color: #444342;
+  margin-left: 50px;
+}
+.journeytext .text li {
+  font-size: 17px;
+  font-weight: 300;
+  color: #444342;
+  margin-left: 25px;
+  margin-top: 7px;
+}
+
+/* CSS 4 PROJECTS PAGE */
+#projectspage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+   transition: all 1s linear;
+}
+.projectsheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 150px;
+  align-self: flex-end;
+}
+.projectsheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.projectscontbox {
+  width: 90%;
+  height: 55%;
+  background-color: white;
+  display: flex;
+  align-self: flex-start;
+  border-top-right-radius: 50px;
+}
+.projectscontbox .photo {
+  width: 65%;
+}
+.projectscontbox .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.projectscontbox .text {
+  width: 41%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.projectscontbox .text h3 {
+  font-weight: 400;
+  background-color: #02aabd;
+  color: white;
+  padding: 0px 100px;
+}
+.projectscontbox .text h4 {
+  font-weight: 300;
+  color: #444342;
+  margin-bottom: 25px;
+  margin-top: 3px;
+}
+.projectscontbox .text p {
+  font-weight: 300;
+  color: #444342;
+  width: 90%;
+  font-size: 15px;
+}
+.projectscontbox .text li {
+  font-weight: 300;
+  color: #444342;
+  width: 90%;
+  font-size: 15px;
+}
+
+/* CSS 4 STUDIES PAGE */
+#studiespage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+   transition: all 1s linear;
+}
+.studiesheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 150px;
+  align-self: flex-end;
+}
+.studiesheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.studiescontbox {
+  width: 100%;
+  height: 55%;
+  align-self: flex-start;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.studiescontbox .photo {
+  width: 45%;
+  height: 100%;
+  border-top-right-radius: 50px;
+}
+.studiescontbox .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.studiescontbox .text {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-top-left-radius: 50px;
+}
+.studiescontbox .text h3 {
+  background-color: #02aabd;
+  color: white;
+  font-weight: 400;
+  padding-left: 50px;
+  width: 65%;
+}
+.studiescontbox .text li {
+  font-weight: 300;
+  margin-left: 25px;
+  color: #444342;
+}
+
+/* CSS 4 SERVICES PAGE */
+#servicespage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.servicesheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 175px;
+  align-self: flex-end;
+}
+.servicesheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.uiuxbox {
+  width: 35%;
+  height: 50%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
+.uiuxbox h3 {
+  color: white;
+  background-color: #02aabd;
+  font-weight: 400;
+  padding-left: 300px;
+}
+.uiuxbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.frontendbox {
+  width: 40%;
+  height: 50%;
+  background-color: rgb(255, 255, 255, 0.5);
+  align-self: flex-end;
+  border-top-left-radius: 50px;
+  overflow: hidden;
+}
+.frontendbox h3 {
+  color: white;
+  background-color: #02aabd;
+  font-weight: 400;
+  padding-left: 100px;
+}
+.frontendbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.javabox {
+  width: 22%;
+  height: 50%;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  overflow: hidden;
+  top: 50%;
+  left: 36.5%;
+}
+.javabox h3 {
+  color: white;
+  background-color: #02aabd;
+  font-weight: 400;
+  padding-left: 75px;
+}
+.javabox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS 4 CONTACT PAGE */
+#contactpage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: linear-gradient(to right, #02aabd, #00cdac);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  opacity: 0;
+   transition: all 1s linear;
+}
+.contactheading {
+  width: 80%;
+  height: 10%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-top: 150px;
+  align-self: flex-end;
+}
+.contactheading h3 {
+  color: #02aabd;
+  font-weight: 400;
+  letter-spacing: 5px;
+  background-color: white;
+  padding: 8px 50px;
+  border-radius: 15px;
+}
+.contactcontbox {
+  width: 100%;
+  height: 55%;
+  display: flex;
+}
+.cbox {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.cbox .strip {
+  width: 75%;
+  height: 20%;
+  background-color: rgb(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.strip .logo {
+  width: 75px;
+  height: 45px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #02aabd;
+  font-size: 22px;
+  margin-left: 30px;
+}
+.strip h3 {
+  color: #02aabd;
+  background-color: white;
+  width: 60%;
+  font-weight: 400;
+  border-bottom-right-radius: 15px;
+  letter-spacing: 3px;
+  font-size: 17px;
+  padding: 10px 25px 10px 25px;
+}
+.strip a {
+  color: #02aabd;
+}
+.contactimg {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 50px;
+  background-color: white;
+}
+.contactimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

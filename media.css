@@ -1,0 +1,374 @@
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  .menuiconbox {
+    width: 72%;
+  }
+  .menuiconbox .icon {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .menucontentbox {
+    top: 10%;
+    left: 0%;
+    width: 48%;
+    height: 80%;
+    flex-direction: column;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    gap: 25px;
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: all 0.6s linear;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #80dfd7;
+  }
+  .menucontentboxslider {
+    transform: translateX(0%);
+  }
+
+  /* MEDIA CSS 4 HOME PAGE */
+  .pfbox h1 {
+    font-size: 50px;
+  }
+  .pfbox .spn {
+    font-size: 50px;
+  }
+  .whomibox {
+    width: 75%;
+    left: 25%;
+  }
+  .mcontentbox {
+    flex-direction: column;
+    height: 88%;
+    top: 12%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  .photo {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+  }
+  .photo img {
+    object-fit: contain;
+  }
+  .textsec {
+    width: 100%;
+    height: 50%;
+  }
+  .textsec h1 {
+    font-size: 22px;
+  }
+  .textsec h3 {
+    width: 85%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .textsec p {
+    font-size: 10px;
+    margin-bottom: 65px;
+    padding: 8px 8px;
+  }
+  .cv {
+    width: 75%;
+    height: 10%;
+    left: 25%;
+    top: 90%;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* MEDIA CSS 4 ABOUT PAGE */
+  #aboutpage {
+    gap: 20px;
+  }
+  .aboutheading {
+    width: 85%;
+    gap: 5px;
+  }
+  .aboutheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .abouttext {
+    width: 90%;
+    height: 75%;
+    flex-direction: column;
+  }
+  .abouttext .photo {
+    width: 100%;
+    height: 50%;
+  }
+  .abouttext .photo img {
+    object-fit: contain;
+  }
+  .abouttext .text {
+    width: 100%;
+    height: 50%;
+  }
+  .abouttext .text p {
+    font-size: 10px;
+    width: 100%;
+    padding: 21px 22px;
+    border-top-right-radius: 0px;
+    letter-spacing: 0.5px;
+  }
+
+  /* MEDIA CSS 4 SKILLS PAGE */
+  #skillspage {
+    gap: 20px;
+  }
+  .skillsheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .skillsheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .box {
+    height: 75%;
+  }
+  .boxi {
+    width: 85%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .boxi h3 {
+    font-size: 16px;
+    width: 240px;
+    letter-spacing: 1px;
+  }
+  .icbox {
+    font-size: 25px;
+  }
+
+  /* MEDIA CSS 4 JOURNEY PAGE */
+  .journeyheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .journeyheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .journeycntbox {
+    height: 75%;
+    flex-direction: column;
+  }
+  .journeyphoto {
+    width: 92%;
+    height: 38%;
+    border-top-right-radius: 35px;
+  }
+  .journeytext {
+    width: 92%;
+    height: 58%;
+    align-self: flex-end;
+    border-top-left-radius: 35px;
+  }
+  .journeytext .text {
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+    border-top-left-radius: 35px;
+  }
+  .journeytext .text h3 {
+    font-size: 14px;
+    padding-left: 65px;
+    font-weight: 400;
+  }
+  .journeytext .text h4 {
+    font-size: 10px;
+    margin-left: 15px;
+    width: 90%;
+  }
+  .journeytext .text li {
+    font-size: 9.5px;
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  /* MEDIA CSS 4 PROJECTS PAGE */
+  .projectsheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .projectsheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .projectscontbox {
+    height: 75%;
+    width: 85%;
+    flex-direction: column;
+  }
+  .projectscontbox .photo {
+    width: 100%;
+    height: 28%;
+  }
+  .projectscontbox .text {
+    width: 100%;
+    height: 72%;
+  }
+  .projectscontbox .text h3 {
+    font-size: 15px;
+    padding: 0px 38px;
+  }
+  .projectscontbox .text h4 {
+    margin-bottom: 0px;
+    font-size: 11px;
+    margin-bottom: 25px;
+  }
+  .projectscontbox .text p {
+    font-size: 11px;
+    width: 85%;
+  }
+  .projectscontbox .text li {
+    width: 85%;
+    font-size: 11px;
+  }
+
+  /* MEDIA CSS 4 STUDIES PAGE */
+  .studiesheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .studiesheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .studiescontbox{
+    height: 75%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .studiescontbox .photo{
+    width: 85%;
+    height: 40%;
+    border-top-right-radius:35px ;
+  }
+  .studiescontbox .text{
+    width: 90%;
+    height: 55%;
+    align-self: flex-end;
+    overflow: hidden;
+     border-top-left-radius:35px ;
+  }
+  .studiescontbox .text h3{
+ font-size: 15px;
+ width: 85%;
+}
+.studiescontbox .text li{
+  font-size: 11px;
+}
+
+/* MEDIA CSS 4 SERVICES PAGE */
+.servicesheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .servicesheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .uiuxbox{
+    width: 90%;
+    height: 25%;
+    top: 25%;
+    border-bottom-right-radius:35px ;
+    border-top-right-radius:0px ;
+  }
+  .uiuxbox h3{
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .uiuxbox img{
+    object-position: center;
+  }
+  .frontendbox{
+    width: 90%;
+    height: 25%;
+    align-self: flex-start;
+    border-top-left-radius: 0px;
+    border-top-right-radius:35px ;
+    
+  }
+  .frontendbox h3{
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .frontendbox img{
+    object-position: bottom;
+  }
+  .javabox{
+    width: 90%;
+    height: 20%;
+    top: 52.5%;
+    left: 0%;
+    border-radius: 35px;
+    border-top-left-radius: 0px;
+     border-bottom-left-radius: 0px;
+  }
+  .javabox h3{
+    font-size: 14px;
+    padding-left: 25px;
+  }
+  .javabox img{
+    object-position: center;
+  }
+
+  /* MEDIA CSS 4 CONTACT PAGE */
+  .contactheading {
+    width: 85%;
+    margin-top: 79px;
+  }
+  .contactheading h3 {
+    letter-spacing: 0px;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  .contactcontbox{
+    width: 100%;
+    height: 77%;
+    flex-direction: column;
+  }
+  .cbox{
+    width: 100%;
+    height: 60%;
+  }
+  .cbox .strip{
+    width: 90%;
+    gap: 8px;
+  }
+  .strip .logo{
+    width: 55px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .strip h3{
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding: 0px;
+    padding-left: 5px;
+  }
+  .contactimg{
+    width: 85%;
+    height: 39%;
+    align-self: flex-end;
+    margin-top: 8px;
+  }
+ 
+}
