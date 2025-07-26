@@ -75,3 +75,4 @@ let cvicon = document.querySelector(".cv");
 cvicon.addEventListener("click", (event) => {
   event.stopPropagation();
 });
+
